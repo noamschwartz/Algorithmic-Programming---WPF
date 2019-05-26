@@ -1,0 +1,22 @@
+﻿<Window x:Class="FlightSimulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlightSimulator.Views"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="850">
+    <Grid>
+        <Canvas>
+            <TextBlock Text="Flight Simulator" Margin="3" FontSize="25" FontStyle="Italic" 
+                       Canvas.Left="40" FontWeight="UltraBold"/>
+        </Canvas>
+       
+        <local:FlightBoard Width="370" Height="370" HorizontalAlignment="Left" Margin="0,35,10.333,9.667">
+        </local:FlightBoard>
+        <local:ConnectAndSettings Margin="0,25,10.333,9.667"></local:ConnectAndSettings>
+        <local:ControlScreen Width="420" Height="450" Margin="0,0,10,9" HorizontalAlignment="Right"></local:ControlScreen>
+
+    </Grid>
+
+</Window>
